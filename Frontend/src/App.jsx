@@ -1,4 +1,3 @@
-import React from 'react'
 import Home from "./Home/home";
 import Signup from './components/signup';
 import { Toaster } from 'react-hot-toast';
@@ -9,7 +8,7 @@ import About from './About/aboutmain';
 import { useAuth } from './context/Authprovider';
 
 function App() {
-  const { authUser, setAuthUser } = useAuth();
+  const { authUser } = useAuth();
   console.log(authUser);
   return (
     <>

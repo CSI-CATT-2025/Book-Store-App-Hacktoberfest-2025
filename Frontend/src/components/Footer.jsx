@@ -1,20 +1,18 @@
-import React from 'react'
-
 function Footer() {
     return (
         <div>
             <hr />
             <footer className="footer footer-center   p-10 bg-slate-100 text-black dark:text-white dark:bg-slate-900">
-                <nav className="grid grid-flow-col gap-4">
+                <nav className="flex flex-wrap justify-center gap-4">
                     <a className="link link-hover" href='/'>Home</a>
                     <a className="link link-hover" href='/Main'>Course</a>
                     <a className="link link-hover" href='/About'>About</a>
                     <a className="link link-hover" href='/Contact'>Contact us</a>
                 </nav>
                 <nav>
-                    <div className="grid grid-flow-col gap-4">
+                    <div className="flex flex-wrap justify-center gap-4">
                         {/* GitHub */}
-                        <a href="https://github.com/Aditya-jambhale" target="_blank" rel="noopener noreferrer">
+                        <a href="https://github.com/Aditya-jambhale" target="_blank" rel="noopener noreferrer" className="transition-transform duration-200 hover:scale-110">
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 width="24"
@@ -27,7 +25,7 @@ function Footer() {
                         </a>
 
                         {/* Instagram */}
-                        <a href="https://www.instagram.com/_.adityeahhh" target="_blank" rel="noopener noreferrer">
+                        <a href="https://www.instagram.com/_.adityeahhh" target="_blank" rel="noopener noreferrer" className="transition-transform duration-200 hover:scale-110">
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 width="24"
@@ -42,7 +40,7 @@ function Footer() {
                         </a>
 
                         {/* LinkedIn */}
-                        <a href="https://www.linkedin.com/in/adityajambhale" target="_blank" rel="noopener noreferrer">
+                        <a href="https://www.linkedin.com/in/adityajambhale" target="_blank" rel="noopener noreferrer" className="transition-transform duration-200 hover:scale-110">
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 width="24"
@@ -55,7 +53,7 @@ function Footer() {
                         </a>
 
                         {/* Twitter */}
-                        <a href="https://x.com/AdityaJambhal18" target="_blank" rel="noopener noreferrer">
+                        <a href="https://x.com/AdityaJambhal18" target="_blank" rel="noopener noreferrer" className="transition-transform duration-200 hover:scale-110">
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 width="24"
@@ -68,7 +66,7 @@ function Footer() {
                         </a>
 
                         {/* WhatsApp */}
-                        <a href="https://wa.me/8108765751" target="_blank" rel="noopener noreferrer">
+                        <a href="https://wa.me/8108765751" target="_blank" rel="noopener noreferrer" className="transition-transform duration-200 hover:scale-110">
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 width="24"

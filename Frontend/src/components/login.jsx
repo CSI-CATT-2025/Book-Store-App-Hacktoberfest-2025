@@ -1,10 +1,9 @@
-import React from 'react'
 import { Link } from 'react-router-dom'
 import { useForm } from "react-hook-form"
 import axios from "axios"
 import toast from 'react-hot-toast'
 
-function login() {
+function Login() {
     const {
         register,
         handleSubmit,
@@ -76,4 +75,4 @@ function login() {
     )
 }
 
-export default login
+export default Login

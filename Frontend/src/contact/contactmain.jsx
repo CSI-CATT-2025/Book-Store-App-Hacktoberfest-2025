@@ -1,8 +1,7 @@
-import React from 'react'
 import Navbar from '../components/Navbar'
 import Contact from '../components/contactus'
 import Footer from '../components/Footer'
-function contactmain() {
+function Contactmain() {
   return (
     <div>
       <Navbar />
@@ -12,4 +11,4 @@ function contactmain() {
   )
 }
 
-export default contactmain
+export default Contactmain

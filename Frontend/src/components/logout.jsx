@@ -1,8 +1,7 @@
-import React from 'react'
 import { useAuth } from '../context/Authprovider'
 import toast from 'react-hot-toast';
 
-function logout() {
+function Logout() {
     const {authUser, setAuthUser}=useAuth();
     const handlelogout=() => {
         try {
@@ -26,4 +25,4 @@ function logout() {
     )
 }
 
-export default logout
+export default Logout

@@ -1,6 +1,6 @@
-import React from 'react'
+import PropTypes from 'prop-types';
 
-function cards({ item }) {
+function Cards({ item }) {
     return (
         <>
             <div className="card bg-slate-100 text-black w-80 md:w-96 shadow md:shadow-xl my-3 hover:scale-105 duration-100  dark:text-black dark:border-x-2 ">
@@ -24,4 +24,13 @@ function cards({ item }) {
     )
 }
 
-export default cards
+Cards.propTypes = {
+    item: PropTypes.shape({
+        image: PropTypes.string.isRequired,
+        name: PropTypes.string.isRequired,
+        category: PropTypes.string.isRequired,
+        price: PropTypes.number.isRequired,
+    }).isRequired,
+};
+
+export default Cards

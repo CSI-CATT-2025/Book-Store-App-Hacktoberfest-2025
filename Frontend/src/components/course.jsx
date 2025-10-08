@@ -1,4 +1,3 @@
-import React from 'react'
 import Cards from './cards';
 import axios from 'axios'
 import { useState, useEffect } from 'react';
@@ -6,7 +5,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 
-function course() {
+function Course() {
     const [book, setBook] = useState([])
     useEffect(() => {
         const getBook = async () => {
@@ -78,4 +77,4 @@ function course() {
     )
 }
 
-export default course
+export default Course

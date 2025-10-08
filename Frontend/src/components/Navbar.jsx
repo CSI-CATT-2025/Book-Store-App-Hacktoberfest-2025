@@ -1,12 +1,11 @@
-import React, { useState } from 'react'
-import { useEffect } from 'react';
+import { useState, useEffect } from 'react'
 import Login from "./login";
 import Logout from "./logout";
 import { useAuth } from '../context/Authprovider';
 
 
 function Navbar() {
-    const { authUser, setAuthUser } = useAuth();
+    const { authUser } = useAuth();
     console.log(authUser);
     const [theme, setTheme] = useState(localStorage.getItem('theme') ? localStorage.getItem('theme') : 'light');
     const element = document.documentElement;
@@ -21,7 +20,7 @@ function Navbar() {
             localStorage.setItem("theme", "light");
             document.body.classList.remove("dark");
         }
-    }, [theme]);
+    }, [theme, element]);
 
     const [sticky, setSticky] = useState(false)
     useEffect(() => {
